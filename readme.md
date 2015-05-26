@@ -1,11 +1,13 @@
 This is example on how to use BitPay API.
 
 HTML:
-
+<code>
 <a href="#" id="id-bitpay-invoice" title="BitPay, the easy way to pay with bitcoins."><img src="https://bitpay.com/img/button5.png" alt="BitPay, the easy way to pay with bitcoins."></a>
 <span id="id-bitpay-status"></span>
+</code>
 
 Javascript:
+<code>
 <script src='{{ media_url }}jquery.bitpay.js' type='text/javascript'></script>
 <script>
 $(document).ready(function(){
@@ -30,12 +32,14 @@ $(document).ready(function(){
 
 });
 </script>
+</code>
 
 Python:
-
+<code>
 def rpc_bitpay_create_invoice(request):
     """
     Creates BitPay invoice. See tasks.py
     """
     task = BitPayInvoice()
     task.delay(self, order_id, price, desc, buyer_email, cart_id)
+</code>
